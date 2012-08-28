@@ -5,7 +5,7 @@ Erlang-Java Interface: interact erlang/java
 
 Clone the project from:
 
-				https://
+				$ git clone https://github.com/jorgegarrido/javerl.git
       
 Into javerl:
 
