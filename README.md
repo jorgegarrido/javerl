@@ -4,7 +4,7 @@ javerl
 Erlang-Java Interface: interact erlang/java
 
 Clone the project from:
-		https://
+				https://
       
 Into javerl:
 		$ cd javerl
