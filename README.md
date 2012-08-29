@@ -18,7 +18,7 @@ Compile javerl:
 Let's start the application and compile the java example in 
 java_src:
 
-				$ make example
+				$ make example:
 
 Now an erlang socket is ready to receive messages from Java, the class Javerl.java
 send a simple message to this socket.
@@ -45,7 +45,7 @@ Now you can view activity on the erlang shell:
 And the response when the java class Javerl was executed is:
 		
 				$ available:14
-				  response erlang: erlang rocks!!
+				  erlang response: erlang rocks!!
 
 Since the java class prints the total bytes and the message returned by erlang!
 
