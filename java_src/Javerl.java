@@ -78,7 +78,7 @@ public class Javerl {
          x ++;
       }
       String bytes = new String(read, 0, 0, read.length);
-      System.out.println("response erlang: " + bytes);
+      System.out.println("erlang response: " + bytes);
 
       socket.close();
       return;
