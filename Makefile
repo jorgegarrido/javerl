@@ -14,3 +14,7 @@ clean:
                 rm -rf ebin/$$FILE;\
                 echo "rm -rf ebin/$$FILE";\
         done
+	rm -rf java_src/Javerl.class
+
+example:
+	(cd java_src && javac Javerl.java && erl -pa ../ebin/ -eval 'ok = application:start(javerl)')

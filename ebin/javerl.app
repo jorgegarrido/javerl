@@ -6,4 +6,4 @@
   {modules,[javerl_app, javerl_sup, socket]},
   {applications, [kernel,stdlib]},
   {mod, { javerl_app, []}},
-  {env, [{port, 2575}]}]}.
+  {env, [{port, 2575}, {reply, "erlang rocks!!"}]}]}.

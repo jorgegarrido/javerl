@@ -1,3 +1,11 @@
+%% ----------------------------------------------
+%%
+%% Jorge Garrido <jorge.garrido@morelosoft.com>
+%%
+%% javerl_app.erl
+%%
+%% ----------------------------------------------
+
 -module(javerl_app).
 
 -behaviour(application).

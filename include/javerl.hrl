@@ -1,1 +1,2 @@
--define(TCP_OPTIONS, [binary, {packet, 0}, {active, true}, {reuseaddr, true}]).
+-define(REPLY, application:get_env(javerl, reply)).
+-define(TCP_OPTIONS, [binary, {packet, raw}, {active, false}, {reuseaddr, true}]).

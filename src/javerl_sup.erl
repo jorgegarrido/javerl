@@ -1,8 +1,12 @@
+%% ----------------------------------------------
+%% 
+%% Jorge Garrido <jorge.garrido@morelosoft.com>
+%%
+%% javerl_sup.erl
+%%
+%% ----------------------------------------------
+
 -module(javerl_sup).
-
--vsn("0.1").
-
--author("Jorge Garrido <jorge.garrido@morelosoft.com>").
 
 -behaviour(supervisor).
 
@@ -30,7 +34,7 @@ start_link() ->
 
 init([]) ->
     {ok, Port} = application:get_env(javerl, port),
-    Args = [Port, {socket, loop}],
+    Args = [Port, {acceptor, loop}],
     Childs = [?CHILD(socket, worker, Args)],
     {ok, { {one_for_one, 1000, 3600}, Childs} }.
 
