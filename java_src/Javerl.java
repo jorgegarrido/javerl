@@ -4,6 +4,16 @@
 //
 // Javerl.erl
 //
+// class : 
+//	Javerl
+//
+// constructors :
+//	public Javerl(String host, int port)
+//
+// methods :
+//	public static void main(String[] args)
+//	public void send_get_message(byte message[])
+//
 // ----------------------------------------------
 
 import java.io.*;
@@ -27,7 +37,7 @@ public class Javerl {
   public Javerl(String host, int port) {
      this.host = host;
      this.port = port;
-  }
+  } // constructor
 
   /**
    *
@@ -44,8 +54,8 @@ public class Javerl {
         socket.send_get_message(message);
       } catch (Exception ex) {
         System.out.println(ex.getMessage());
-      }
-  }
+      } // try - catch
+  } // main method
 
   /**
    *
@@ -76,7 +86,7 @@ public class Javerl {
          ret = input.read();
          read[x] = (byte) ret;
          x ++;
-      }
+      } // while
       String bytes = new String(read, 0, 0, read.length);
       System.out.println("erlang response: " + bytes);
 
@@ -84,6 +94,6 @@ public class Javerl {
       return;
     } catch (Exception ex) {
        System.out.println(ex.getMessage());
-    }
-  }
-}
+    } try - catch
+  } // send_get_message method
+} // this class
